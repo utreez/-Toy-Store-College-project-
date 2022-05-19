@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище BabyShopDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Organization">
+    <Key>
+      <PropertyRef Name="PostId" />
+      <PropertyRef Name="TovarId" />
+    </Key>
+    <Property Name="PostId" Type="int" Nullable="false" />
+    <Property Name="TovarId" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" />
+    <Property Name="kolvo" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="AccepterTheOrder" Type="int" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Post">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Number" Type="nvarchar" MaxLength="20" />
+    <Property Name="City" Type="int" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="RegularPeople">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="255" />
+    <Property Name="NameCard" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Sales">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="TovarId" Type="int" />
+    <Property Name="Kolvo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Price" Type="money" />
+    <Property Name="RegularPeopleId" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Tovar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Descriptions" Type="nvarchar" MaxLength="255" />
+    <Property Name="Price" Type="money" />
+    <Property Name="Image" Type="image" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="char" MaxLength="55" Nullable="false" />
+    <Property Name="City" Type="int" />
+    <Property Name="Role" Type="int" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <Association Name="FK__Organizat__CityI__60A75C0F">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="Organization" Type="Self.Organization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organization">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organizat__Invit__619B8048">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Organization" Type="Self.Organization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organization">
+        <PropertyRef Name="AccepterTheOrder" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organizat__PostI__5EBF139D">
+    <End Role="Post" Type="Self.Post" Multiplicity="1" />
+    <End Role="Organization" Type="Self.Organization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Post">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organization">
+        <PropertyRef Name="PostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organizat__Tovar__5FB337D6">
+    <End Role="Tovar" Type="Self.Tovar" Multiplicity="1" />
+    <End Role="Organization" Type="Self.Organization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tovar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organization">
+        <PropertyRef Name="TovarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Post__City__5BE2A6F2">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="Post" Type="Self.Post" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Post">
+        <PropertyRef Name="City" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__User__City__5070F446">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="City" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__User__Role__5165187F">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_RegularPeople">
+    <End Role="RegularPeople" Type="Self.RegularPeople" Multiplicity="0..1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegularPeople">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="RegularPeopleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_Tovar">
+    <End Role="Tovar" Type="Self.Tovar" Multiplicity="0..1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tovar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="TovarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище BabyShopDBModelContainer">
+    <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Organization" EntityType="Self.Organization" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Post" EntityType="Self.Post" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegularPeople" EntityType="Self.RegularPeople" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sales" EntityType="Self.Sales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tovar" EntityType="Self.Tovar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Organizat__CityI__60A75C0F" Association="Self.FK__Organizat__CityI__60A75C0F">
+      <End Role="City" EntitySet="City" />
+      <End Role="Organization" EntitySet="Organization" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organizat__Invit__619B8048" Association="Self.FK__Organizat__Invit__619B8048">
+      <End Role="User" EntitySet="User" />
+      <End Role="Organization" EntitySet="Organization" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organizat__PostI__5EBF139D" Association="Self.FK__Organizat__PostI__5EBF139D">
+      <End Role="Post" EntitySet="Post" />
+      <End Role="Organization" EntitySet="Organization" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organizat__Tovar__5FB337D6" Association="Self.FK__Organizat__Tovar__5FB337D6">
+      <End Role="Tovar" EntitySet="Tovar" />
+      <End Role="Organization" EntitySet="Organization" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Post__City__5BE2A6F2" Association="Self.FK__Post__City__5BE2A6F2">
+      <End Role="City" EntitySet="City" />
+      <End Role="Post" EntitySet="Post" />
+    </AssociationSet>
+    <AssociationSet Name="FK__User__City__5070F446" Association="Self.FK__User__City__5070F446">
+      <End Role="City" EntitySet="City" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__User__Role__5165187F" Association="Self.FK__User__Role__5165187F">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_RegularPeople" Association="Self.FK_Sales_RegularPeople">
+      <End Role="RegularPeople" EntitySet="RegularPeople" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_Tovar" Association="Self.FK_Sales_Tovar">
+      <End Role="Tovar" EntitySet="Tovar" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

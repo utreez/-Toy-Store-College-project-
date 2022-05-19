@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище BabyShopDBModelContainer" CdmEntityContainer="BabyShopDBEntities">
+    <EntitySetMapping Name="City">
+      <EntityTypeMapping TypeName="BabyShopDBModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Organization">
+      <EntityTypeMapping TypeName="BabyShopDBModel.Organization">
+        <MappingFragment StoreEntitySet="Organization">
+          <ScalarProperty Name="PostId" ColumnName="PostId" />
+          <ScalarProperty Name="TovarId" ColumnName="TovarId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="kolvo" ColumnName="kolvo" />
+          <ScalarProperty Name="AccepterTheOrder" ColumnName="AccepterTheOrder" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Post">
+      <EntityTypeMapping TypeName="BabyShopDBModel.Post">
+        <MappingFragment StoreEntitySet="Post">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegularPeople">
+      <EntityTypeMapping TypeName="BabyShopDBModel.RegularPeople">
+        <MappingFragment StoreEntitySet="RegularPeople">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="NameCard" ColumnName="NameCard" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="BabyShopDBModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="BabyShopDBModel.Sales">
+        <MappingFragment StoreEntitySet="Sales">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TovarId" ColumnName="TovarId" />
+          <ScalarProperty Name="Kolvo" ColumnName="Kolvo" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="RegularPeopleId" ColumnName="RegularPeopleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="BabyShopDBModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tovar">
+      <EntityTypeMapping TypeName="BabyShopDBModel.Tovar">
+        <MappingFragment StoreEntitySet="Tovar">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="BabyShopDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

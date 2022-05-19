@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BabyShopDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <NavigationProperty Name="Organization" Relationship="Self.FK__Organizat__CityI__60A75C0F" FromRole="City" ToRole="Organization" />
+    <NavigationProperty Name="Post" Relationship="Self.FK__Post__City__5BE2A6F2" FromRole="City" ToRole="Post" />
+    <NavigationProperty Name="User" Relationship="Self.FK__User__City__5070F446" FromRole="City" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Organization">
+    <Key>
+      <PropertyRef Name="PostId" />
+      <PropertyRef Name="TovarId" />
+    </Key>
+    <Property Name="PostId" Type="Int32" Nullable="false" />
+    <Property Name="TovarId" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" />
+    <Property Name="kolvo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AccepterTheOrder" Type="Int32" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <NavigationProperty Name="City" Relationship="Self.FK__Organizat__CityI__60A75C0F" FromRole="Organization" ToRole="City" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Organizat__Invit__619B8048" FromRole="Organization" ToRole="User" />
+    <NavigationProperty Name="Post" Relationship="Self.FK__Organizat__PostI__5EBF139D" FromRole="Organization" ToRole="Post" />
+    <NavigationProperty Name="Tovar" Relationship="Self.FK__Organizat__Tovar__5FB337D6" FromRole="Organization" ToRole="Tovar" />
+  </EntityType>
+  <EntityType Name="Post">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Number" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="Int32" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <NavigationProperty Name="City1" Relationship="Self.FK__Post__City__5BE2A6F2" FromRole="Post" ToRole="City" />
+    <NavigationProperty Name="Organization" Relationship="Self.FK__Organizat__PostI__5EBF139D" FromRole="Post" ToRole="Organization" />
+  </EntityType>
+  <EntityType Name="RegularPeople">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NameCard" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Sales" Relationship="Self.FK_Sales_RegularPeople" FromRole="RegularPeople" ToRole="Sales" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <NavigationProperty Name="User" Relationship="Self.FK__User__Role__5165187F" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Sales">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="TovarId" Type="Int32" />
+    <Property Name="Kolvo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="RegularPeopleId" Type="Int32" />
+    <NavigationProperty Name="RegularPeople" Relationship="Self.FK_Sales_RegularPeople" FromRole="Sales" ToRole="RegularPeople" />
+    <NavigationProperty Name="Tovar" Relationship="Self.FK_Sales_Tovar" FromRole="Sales" ToRole="Tovar" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Tovar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Descriptions" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <NavigationProperty Name="Organization" Relationship="Self.FK__Organizat__Tovar__5FB337D6" FromRole="Tovar" ToRole="Organization" />
+    <NavigationProperty Name="Sales" Relationship="Self.FK_Sales_Tovar" FromRole="Tovar" ToRole="Sales" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="55" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="Int32" />
+    <Property Name="Role" Type="Int32" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <NavigationProperty Name="City1" Relationship="Self.FK__User__City__5070F446" FromRole="User" ToRole="City" />
+    <NavigationProperty Name="Organization" Relationship="Self.FK__Organizat__Invit__619B8048" FromRole="User" ToRole="Organization" />
+    <NavigationProperty Name="Role1" Relationship="Self.FK__User__Role__5165187F" FromRole="User" ToRole="Role" />
+  </EntityType>
+  <Association Name="FK__Organizat__CityI__60A75C0F">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="Organization" Type="Self.Organization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organization">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Post__City__5BE2A6F2">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="Post" Type="Self.Post" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Post">
+        <PropertyRef Name="City" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__User__City__5070F446">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="City" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organizat__Invit__619B8048">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Organization" Type="Self.Organization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organization">
+        <PropertyRef Name="AccepterTheOrder" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organizat__PostI__5EBF139D">
+    <End Role="Post" Type="Self.Post" Multiplicity="1" />
+    <End Role="Organization" Type="Self.Organization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Post">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organization">
+        <PropertyRef Name="PostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organizat__Tovar__5FB337D6">
+    <End Role="Tovar" Type="Self.Tovar" Multiplicity="1" />
+    <End Role="Organization" Type="Self.Organization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tovar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organization">
+        <PropertyRef Name="TovarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_RegularPeople">
+    <End Role="RegularPeople" Type="Self.RegularPeople" Multiplicity="0..1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegularPeople">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="RegularPeopleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__User__Role__5165187F">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_Tovar">
+    <End Role="Tovar" Type="Self.Tovar" Multiplicity="0..1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tovar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="TovarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BabyShopDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="City" EntityType="Self.City" />
+    <EntitySet Name="Organization" EntityType="Self.Organization" />
+    <EntitySet Name="Post" EntityType="Self.Post" />
+    <EntitySet Name="RegularPeople" EntityType="Self.RegularPeople" />
+    <EntitySet Name="Role" EntityType="Self.Role" />
+    <EntitySet Name="Sales" EntityType="Self.Sales" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Tovar" EntityType="Self.Tovar" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <AssociationSet Name="FK__Organizat__CityI__60A75C0F" Association="Self.FK__Organizat__CityI__60A75C0F">
+      <End Role="City" EntitySet="City" />
+      <End Role="Organization" EntitySet="Organization" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Post__City__5BE2A6F2" Association="Self.FK__Post__City__5BE2A6F2">
+      <End Role="City" EntitySet="City" />
+      <End Role="Post" EntitySet="Post" />
+    </AssociationSet>
+    <AssociationSet Name="FK__User__City__5070F446" Association="Self.FK__User__City__5070F446">
+      <End Role="City" EntitySet="City" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organizat__Invit__619B8048" Association="Self.FK__Organizat__Invit__619B8048">
+      <End Role="User" EntitySet="User" />
+      <End Role="Organization" EntitySet="Organization" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organizat__PostI__5EBF139D" Association="Self.FK__Organizat__PostI__5EBF139D">
+      <End Role="Post" EntitySet="Post" />
+      <End Role="Organization" EntitySet="Organization" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organizat__Tovar__5FB337D6" Association="Self.FK__Organizat__Tovar__5FB337D6">
+      <End Role="Tovar" EntitySet="Tovar" />
+      <End Role="Organization" EntitySet="Organization" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_RegularPeople" Association="Self.FK_Sales_RegularPeople">
+      <End Role="RegularPeople" EntitySet="RegularPeople" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK__User__Role__5165187F" Association="Self.FK__User__Role__5165187F">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_Tovar" Association="Self.FK_Sales_Tovar">
+      <End Role="Tovar" EntitySet="Tovar" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

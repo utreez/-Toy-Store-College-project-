@@ -1,0 +1,56 @@
+﻿<Window x:Class="BabyShop.View.BimBomWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BabyShop.View"
+        mc:Ignorable="d"
+ Title="BimBomWindow" Height="450" Width="800" Background="{x:Null}" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True">
+    <Grid x:Name="MainGrid" MouseDown="MainGrid_MouseDown">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*"/>
+
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.ColumnSpan="2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="440" Stroke="Black" VerticalAlignment="Top" Width="800" RadiusY="13.5" RadiusX="13.5"/>
+        <Image HorizontalAlignment="Left" Height="48.167" Margin="704.833,15.25,0,0" VerticalAlignment="Top" Width="51.332" Source="/BabyShop;component/Image/avatar.png"/>
+        <Image Cursor="Hand" Name="Exit" MouseDown="Exit_MouseDown" HorizontalAlignment="Left" Height="16.667" Margin="772.667,10,0,0" VerticalAlignment="Top" Width="17.333" >
+            <Image.Style>
+                <Style TargetType="Image">
+                    <Setter Property="Source" Value="/BabyShop;component/Image/exit.png" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Source" Value="/BabyShop;component/Image/exit2.png"  />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Image.Style>
+        </Image>
+        <TextBlock x:Name="nameText" HorizontalAlignment="Left" Height="32" Margin="597.833,26.667,0,0" TextWrapping="Wrap" Text="userName" VerticalAlignment="Top" Width="102"/>
+        <ListView   x:Name="ListView" ScrollViewer.CanContentScroll="False"  ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="{x:Null}" Margin="10,68.417,10,22" BorderBrush="{x:Null}">
+
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="{Binding Name}" x:Name="Names" FontSize="24" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding Descriptions}" x:Name="Price" FontSize="20" TextWrapping="Wrap"/>
+                        <Image Source="{Binding Image}"  Stretch="Uniform" x:Name="ImagePath" Width="200" Height="200" HorizontalAlignment="Left"/>
+                        <TextBlock Text="{Binding Price}" FontSize="24" TextWrapping="Wrap" x:Name="Description" />
+                        <StackPanel Orientation="Horizontal" >
+                            <Button Content="Редактировать" FontSize="24" Margin="15,0" Background="{x:Null}" x:Name="editBut" Click="editBut_Click"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+        <Button x:Name="addBut" Click="addBut_Click" Content="Добавить товар" HorizontalAlignment="Left" Height="24.581" Margin="37.5,34.086,0,0" VerticalAlignment="Top" Width="114" Background="{x:Null}"/>
+        <Image HorizontalAlignment="Left" Height="49" Margin="358,10,0,0" VerticalAlignment="Top" Width="73" Source="/Image/logo.png"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="341,23,0,0" TextWrapping="Wrap" Text="Baby Shop" VerticalAlignment="Top" Width="80" FontSize="16" Foreground="#FFFF8FB6" Opacity="0.485" FontFamily="Prociono"/>
+        <TextBox x:Name="Search" HorizontalAlignment="Left" Height="24.581" Margin="156.5,34.086,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119.958" RenderTransformOrigin="0.499,0.501"/>
+        <Button Click="SearchBtn_Click" x:Name="SearchBtn" Content="Поиск" HorizontalAlignment="Left" Height="24.581" Margin="281.458,34.086,0,0" VerticalAlignment="Top" Width="54.542" Background="{x:Null}"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,215 @@
+D:\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.AssemblyReference.cache
+D:\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.SuggestedBindingRedirects.cache
+D:\BabyShop\BabyShop\obj\Debug\App.g.cs
+D:\BabyShop\BabyShop\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\BabyShop\BabyShop\obj\Debug\BabyShop_MarkupCompile.cache
+D:\BabyShop\BabyShop\obj\Debug\BabyShop_MarkupCompile.lref
+D:\BabyShop\BabyShop\bin\Debug\BabyShop.exe.config
+D:\BabyShop\BabyShop\bin\Debug\BabyShop.exe
+D:\BabyShop\BabyShop\bin\Debug\BabyShop.pdb
+D:\BabyShop\BabyShop\obj\Debug\View\MainWindow.g.cs
+D:\BabyShop\BabyShop\obj\Debug\View\MainWindow.baml
+D:\BabyShop\BabyShop\obj\Debug\BabyShop.g.resources
+D:\BabyShop\BabyShop\obj\Debug\BabyShop.Properties.Resources.resources
+D:\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.GenerateResource.cache
+D:\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.CoreCompileInputs.cache
+D:\BabyShop\BabyShop\obj\Debug\BabyShop.exe
+D:\BabyShop\BabyShop\obj\Debug\BabyShop.pdb
+D:\BabyShop\BabyShop\obj\Debug\View\AddToysWindow.g.cs
+D:\BabyShop\BabyShop\obj\Debug\View\BimBomWindow.g.cs
+D:\BabyShop\BabyShop\obj\Debug\View\EditWindow.g.cs
+D:\BabyShop\BabyShop\obj\Debug\BabyShop_Content.g.cs
+D:\BabyShop\BabyShop\bin\Debug\EntityFramework.dll
+D:\BabyShop\BabyShop\bin\Debug\EntityFramework.SqlServer.dll
+D:\BabyShop\BabyShop\bin\Debug\EntityFramework.xml
+D:\BabyShop\BabyShop\bin\Debug\EntityFramework.SqlServer.xml
+D:\BabyShop\BabyShop\bin\Debug\ru\EntityFramework.resources.dll
+D:\BabyShop\BabyShop\obj\Debug\View\AddToysWindow.baml
+D:\BabyShop\BabyShop\obj\Debug\View\BimBomWindow.baml
+D:\BabyShop\BabyShop\obj\Debug\View\EditWindow.baml
+D:\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.CopyComplete
+D:\BabyShop\BabyShop\bin\Debug\Azure.Core.dll
+D:\BabyShop\BabyShop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BabyShop\BabyShop\bin\Debug\System.Buffers.dll
+D:\BabyShop\BabyShop\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\BabyShop\BabyShop\bin\Debug\System.Memory.Data.dll
+D:\BabyShop\BabyShop\bin\Debug\System.Memory.dll
+D:\BabyShop\BabyShop\bin\Debug\System.Numerics.Vectors.dll
+D:\BabyShop\BabyShop\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\BabyShop\BabyShop\bin\Debug\System.Text.Encodings.Web.dll
+D:\BabyShop\BabyShop\bin\Debug\System.Text.Json.dll
+D:\BabyShop\BabyShop\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\BabyShop\BabyShop\bin\Debug\System.ValueTuple.dll
+D:\BabyShop\BabyShop\bin\Debug\Azure.Core.xml
+D:\BabyShop\BabyShop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\BabyShop\BabyShop\bin\Debug\System.Buffers.xml
+D:\BabyShop\BabyShop\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\BabyShop\BabyShop\bin\Debug\System.Memory.xml
+D:\BabyShop\BabyShop\bin\Debug\System.Memory.Data.xml
+D:\BabyShop\BabyShop\bin\Debug\System.Numerics.Vectors.xml
+D:\BabyShop\BabyShop\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\BabyShop\BabyShop\bin\Debug\System.Text.Encodings.Web.xml
+D:\BabyShop\BabyShop\bin\Debug\System.Text.Json.xml
+D:\BabyShop\BabyShop\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\BabyShop\BabyShop\bin\Debug\System.ValueTuple.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\BabyShop.exe.config
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\BabyShop.exe
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\BabyShop.pdb
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\Azure.Core.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\EntityFramework.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Buffers.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Memory.Data.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Memory.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Text.Json.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.ValueTuple.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\Azure.Core.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\EntityFramework.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Buffers.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Memory.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Memory.Data.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Text.Json.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.ValueTuple.xml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.AssemblyReference.cache
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.SuggestedBindingRedirects.cache
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\AddToysWindow.g.cs
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\BimBomWindow.g.cs
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\EditWindow.g.cs
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\MainWindow.g.cs
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\App.g.cs
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop_Content.g.cs
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop_MarkupCompile.cache
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop_MarkupCompile.lref
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\AddToysWindow.baml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\BimBomWindow.baml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\EditWindow.baml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\MainWindow.baml
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.g.resources
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.Properties.Resources.resources
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.GenerateResource.cache
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.CoreCompileInputs.cache
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.CopyComplete
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.exe
+C:\Users\fuba2\Desktop\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.pdb
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\BabyShop.exe.config
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\BabyShop.exe
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\BabyShop.pdb
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\Azure.Core.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\EntityFramework.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\EntityFramework.SqlServer.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Buffers.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Memory.Data.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Memory.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Numerics.Vectors.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Text.Encodings.Web.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Text.Json.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.ValueTuple.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\Azure.Core.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\EntityFramework.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\EntityFramework.SqlServer.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Buffers.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Memory.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Memory.Data.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Numerics.Vectors.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Text.Encodings.Web.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Text.Json.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.ValueTuple.xml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\ru\EntityFramework.resources.dll
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.AssemblyReference.cache
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\AddToysWindow.g.cs
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\BimBomWindow.g.cs
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\EditWindow.g.cs
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\MainWindow.g.cs
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\App.g.cs
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop_Content.g.cs
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop_MarkupCompile.cache
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop_MarkupCompile.lref
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\AddToysWindow.baml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\BimBomWindow.baml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\EditWindow.baml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\MainWindow.baml
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.g.resources
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.Properties.Resources.resources
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.GenerateResource.cache
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.CoreCompileInputs.cache
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.CopyComplete
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.exe
+D:\ИС-33\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.pdb
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\BabyShop.exe.config
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\BabyShop.exe
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\BabyShop.pdb
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\Azure.Core.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\EntityFramework.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Buffers.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Memory.Data.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Memory.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Text.Json.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.ValueTuple.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\Azure.Core.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\EntityFramework.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Buffers.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Memory.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Memory.Data.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Text.Json.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\System.ValueTuple.xml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.AssemblyReference.cache
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.SuggestedBindingRedirects.cache
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\AddToysWindow.g.cs
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\BimBomWindow.g.cs
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\EditWindow.g.cs
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\MainWindow.g.cs
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\App.g.cs
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop_Content.g.cs
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop_MarkupCompile.cache
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop_MarkupCompile.lref
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\AddToysWindow.baml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\BimBomWindow.baml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\EditWindow.baml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\View\MainWindow.baml
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.g.resources
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.Properties.Resources.resources
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.GenerateResource.cache
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.CoreCompileInputs.cache
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.csproj.CopyComplete
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.exe
+C:\Users\fuba2\Desktop\My program\My program\JuliaProgram\BabyShop\BabyShop\obj\Debug\BabyShop.pdb
